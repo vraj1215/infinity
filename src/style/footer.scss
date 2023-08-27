@@ -1,0 +1,159 @@
+@import './color.scss';
+.fstart{
+    height: 400px;
+    background-color: $sbgc;
+    z-index: 1000;
+    >div{
+       display: grid;
+       z-index: 1000;
+       grid-template-columns: repeat(3,1fr);
+    //    grid-gap: 30px;
+       .ffirst{
+        
+        // background-color: red;
+        // border-right: 1px solid rgba(255, 255, 255, 0.507);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.507);
+        padding: 2rem;
+        width: 1fr;
+        height: 324px;
+        >h1{
+            font-size: 4rem;
+            color: yellow;
+            line-height: 2;
+        }
+        >p{
+            line-height: 2;
+            word-spacing: normal;
+        }
+        
+       }
+       .ssecond{
+        display: flex;
+        flex-direction: column;
+        // border-right: 1px solid rgba(255, 255, 255, 0.507);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.507);
+        width: 1fr;
+        height:324px;
+        padding: 4rem;
+        >a{
+            font-size: 1.2rem
+            ;line-height:2;
+            transition: all 0.45s ease-in;
+            &:hover{
+                color: yellow;
+            }
+
+        }
+       
+    }
+    .tthird{
+        display: flex;
+        flex-direction: column;
+        // border-right: 1px solid rgba(255, 255, 255, 0.507);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.507);
+        width: 1fr;
+        height:100%;
+        padding: 4rem;
+        #insta{
+           &::after{
+            content: "instagram";
+            margin-left: 4px;
+            color: yellow;
+            left: 0%;
+            transition: all 0.45s ease-in;
+            opacity: 0;
+            position: absolute;
+           }
+           &:hover{
+            >i{
+                color: yellow;
+            }
+            color: yellow;
+            &::after{
+                left: 10%;
+                opacity: 1;
+            }
+        }
+        }
+        #face{
+            &::after{
+             content: "facebook";
+             margin-left: 4px;
+             left: 0%;
+             transition: all 0.45s ease-in;
+             color: yellow;
+             opacity: 0;
+             position: absolute;
+            }
+            &:hover{
+                >i{
+                    color: yellow;
+                }
+             color: yellow;
+             &::after{
+                 left: 10%;
+                 opacity: 1;
+             }
+         }
+         }
+         #youtu{
+            &::after{
+             content: "youtube";
+             margin-left: 4px;
+             left: 0%;
+             color: yellow;
+             transition: all 0.45s ease-in;
+             opacity: 0;
+             position: absolute;
+            }
+            &:hover{
+             color: yellow;
+             >i{
+                color: yellow;
+             }
+             &::after{
+                 left: 10%;
+                 opacity: 1;
+             }
+         }
+         }
+         #linkin{
+            &::after{
+             content: "linkedin";
+             margin-left: 4px;
+             left: 0%;
+             transition: all 0.45s ease-in;
+             opacity: 0;
+             color: yellow;
+             position: absolute;
+            }
+            &:hover{
+             color: yellow;
+             >i{
+                color: yellow;
+            }
+             &::after{
+                 left: 10%;
+                 opacity: 1;
+             }
+         }
+         }
+        >a{
+            font-size: 1.2rem
+            ;line-height:2;
+            transition: all 0.45s ease-in;
+            position: relative;
+            color: yellow;
+            // &::after{
+            //     content: "instagram";
+            //     margin-left: 4px;
+            //     left: 0%;
+            //     transition: all 0.45s ease-in;
+            //     opacity: 0;
+            //     position: absolute;
+            // }
+            
+        }
+    }
+    }
+}

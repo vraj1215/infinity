@@ -1,0 +1,118 @@
+@import './color.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+
+.start{
+    margin-top: 5%;
+    z-index: 10;
+    background-color:$sbgc;
+    overflow: hidden;
+    // width: fit-content;
+    // margin: 5% auto;
+    padding: 3rem;
+    // background-color: red;
+    
+    >h2 {
+        text-align: center;
+        color: yellow;
+        // background-color: red;
+        padding: 1rem ;
+         
+    }
+    >h1 {
+        text-align: center;
+        // font-family: 'Montserrat', sans-serif;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+        
+        padding: 1rem;
+        
+    }
+    >div{
+        // background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .box{
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            grid-gap: 100px;
+            cursor: pointer;
+            >a{
+                >div{
+                    transition: all .45s ease-in;
+                    .first{
+                        position: absolute;
+                        width: 80%;
+                        transition: all .45s ease-in;
+                        font-size: 2rem;
+                         font-family: 'Playfair Display', serif;;
+                        bottom: -10%;
+                        background-color: $bgc;
+                        padding: 1rem;
+                        transform: translate(12%);
+                        z-index: 100;
+                        border-radius: 5px;
+                    }
+    
+                    .second{
+                        position: absolute;
+                        transition: all .45s ease-in;
+                        height: 100%;
+                        width: 100%;
+                        background-color: rgba(0, 0, 0, 0.322);
+                        bottom: -100%;
+                        opacity: 0;
+                    }
+                    &:hover{
+                        .first{
+                            background-color: yellow;
+                            color: black;
+                        }
+                        .second{
+                            bottom: 0;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+.scontent{
+    display: flex;
+    background-color: $sbgc;
+    justify-content: space-between;
+    padding: 60px;
+    margin: 5rem 0;
+    .sf{
+        padding: 20px;
+        >h1{
+            color: yellow;
+            font-size: 3rem;
+        }
+        >h2{
+            font-size: 1.2rem;
+            margin: 2rem 0;
+            >i{
+                color:$fontc;
+            }
+            color: $fontc;
+        }
+    }
+    .ss{
+        min-height: 500px;
+        min-width: 500px;
+        background-image: url(../assets/img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 30px 30px 0 rgba(255, 255, 255, 0.199);
+        transition: all 0.45s ease-in;
+        &:hover{
+            scale: 0.96;
+        }
+    }
+    }

@@ -1,0 +1,105 @@
+@import './color.scss';
+
+div {
+    >header {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.822);
+        justify-content: space-between;
+        padding: 1.6rem;
+        background-color: black;
+
+        >a {
+            color: yellow;
+            font-weight: 900;
+            background-color: transparent;
+            font-size: 3rem;
+            letter-spacing: 1px;
+            transition: all .45s ease-in;
+        }
+
+        >ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            >li {
+                padding: 0 1rem;
+                background: black;
+                position: relative;
+
+                >a {
+                    color: white;
+                    font-size: 1.2rem;
+                    font-weight: 900;
+                    background-color: transparent;
+                    border: none;
+                    // background-color:rgba(155, 216, 224, 0.411);
+                    padding: 0 25px;
+                    transition: all .45s ease-in;
+
+                    &:hover {
+                        color: yellow;
+                    }
+                }
+              
+                .active {
+                    color: yellow;
+                }
+            }
+        }
+
+        >div {
+            display: none;
+        }
+    }
+
+
+}
+#submenu{
+    position: absolute;
+    left: 20%;
+    z-index: 2000000;
+    background-color: rgba(0, 0, 0, 0.822);
+    border-radius: 10px;
+    // border: 1px solid yellow;   
+    opacity: 0;
+    top: 35px;
+    transition: all 0.45s ease-in;
+    // visibility: hidden;
+    // >li{
+    //     float: none;
+    //     width: 100%;
+    // }
+    >li{
+        padding: 12px;
+        >a{
+            transition: all 0.45s ease-in;
+            &:hover{
+                color: yellow;
+            }
+        }
+    }
+}
+
+#drop{
+    >a{
+        &:hover{
+            #submenu{
+                opacity: 1;
+                // top :80px;
+                // visibility: visible;
+            }
+        }
+    }
+    &:hover{
+        >a{
+            color: yellow;
+        }
+        #submenu{
+            opacity: 1;
+            // top :80px;
+            // visibility: visible;
+        }
+    }
+}

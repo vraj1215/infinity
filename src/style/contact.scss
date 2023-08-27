@@ -1,0 +1,176 @@
+@import './color.scss';
+
+.cmain{
+    .cf{
+        height: 200vh;
+        width: 100%;
+        background: url('../assets/img.jpg');
+        // position: fixed;
+        position: fixed;
+        background-position: center;
+        top: 0;
+        opacity: 0.4;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    .chero {
+        z-index: 10000;
+        width: 100%;
+        // background-color: $sbgc;
+        height: 60vh;
+        background: rgba(0, 0, 0, 0);
+        // background: url('../assets/img.jpg');
+        // background: transparent;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // margin-bottom: 4rem;
+
+        >div {
+            width: 100%;
+            flex-direction: column;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.404);
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            padding: 1rem;
+
+            >h1 {
+                color: yellow;
+                font-size: 4rem;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+                position: relative;
+                line-height: 1.5;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 20%;
+                    height: 4px;
+                    background-color: yellow;
+                    bottom: -3%;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .cform{
+        display: flex;
+        background-color: $sbgc;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4rem;
+        z-index: 1;
+        margin-bottom: 5rem;
+        .cfirst{
+            >h1{
+                font-weight: 900;
+                color: yellow;
+                font-size: 3rem;
+            }
+            >p{
+                font-size: 1.3rem;
+                line-height: 3;
+                color: $fontc;
+            }
+            >h2{
+                display: flex;
+                align-items: center;
+                padding: 30px 0;
+                color: $fontc;
+                >i{
+                    color: yellow;
+                    padding: 0 12px;
+                }
+                >span{
+                    // display: block;
+                    display: flex;
+                    flex-direction: column;
+                    >span{
+                        color: $fontc;
+                    }
+                }
+            }
+        }
+        .csecond{
+            min-width: 50%;
+            padding: 50px;
+            z-index: 10;
+            .csf{
+                background-color: $bgc;
+                padding: 20px;
+                z-index: 10;
+                position: relative;
+                box-shadow: 10px 10px  0 yellow;
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                // flex-direction: column;
+               
+                >form{
+                    width: 100%;
+                    
+                    height: 100%;
+                    // z-index: 100;x   
+                    display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                    >button{
+                        color: yellow;
+                        background: none;
+                        border: none;
+                        cursor:pointer;
+                        font-size: 1.5rem;
+                    }
+                    >textarea{
+                        width: 300px;
+                        background-color: transparent;
+                        border: none;
+                        margin: 15px 0;
+                        padding: 10px;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.336);
+                        transition: all 0.20s ease-in;
+                        resize: none;
+                        &:focus{
+                            outline: none;
+                            border-bottom: 1px solid $fontc;
+                        }
+                    }
+                    >input{
+                        width: 300px;
+                        background-color: transparent;
+                        border: none;
+                        margin: 15px 0;
+                        padding: 10px;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.336);
+                        transition: all 0.20s ease-in;
+                        &:focus{
+                            outline: none;
+                            border-bottom: 1px solid $fontc;
+                        }
+                        &:hover{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .getdir{
+        >h1{
+            font-size: 4rem;
+            color: yellow;
+            padding: 1rem ;
+        }
+        width: 100%;
+        // height: 70vh;
+        background-color: $sbgc;
+        padding: 1rem 0;
+    }
+}
